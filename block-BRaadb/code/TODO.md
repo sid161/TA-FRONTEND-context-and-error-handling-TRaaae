@@ -2,7 +2,7 @@
 
 To ren this app you need to do the following
 
-- Clone the app in this folder: https://github.com/AltCampus/react-hoc
+- Clone the app in this folder: 
 - Run `npm install`
 - To run this app use `npm start`
 

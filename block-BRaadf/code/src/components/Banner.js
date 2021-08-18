@@ -1,9 +1,11 @@
 import React from "react";
+import UserContext from "./UserContext";
 
 class Banner extends React.Component {
   render() {
-    let { isDarkMode } = this.props;
-    return (
+    
+    <UserContext.Consumer>
+      return (
       <div
         className={
           isDarkMode
@@ -15,6 +17,7 @@ class Banner extends React.Component {
         <p>It celebrates that you have successfully completed a major task.</p>
       </div>
     );
+    </UserContext.Consumer>
   }
 }
 

@@ -1,4 +1,9 @@
+  
+import { useContext } from 'react';
+import UserContext from './UserContext';
+
 function Paragraph({ isDarkMode }) {
+  let isDarkMode = useContext(UserContext);
   return (
     <p className={`para ${isDarkMode ? "para-dark" : "para-light"}`}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

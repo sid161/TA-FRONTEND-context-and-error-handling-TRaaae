@@ -1,4 +1,9 @@
+  
+import { useContext } from 'react';
+import UserContext from './UserContext';
+
 function Title({ text, isDarkMode }) {
+  let isDarkMode = useContext(UserContext);
   return (
     <h2
       className={`heading ${

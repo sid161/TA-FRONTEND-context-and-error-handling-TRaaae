@@ -1,4 +1,8 @@
+import {useContext} from 'react'
+import UserContext from './UserContext';
+
 function Card({ isDarkMode }) {
+  let isDarkMode = useContext(UserContext);
   return (
     <div className="card_item">
       <div className={isDarkMode ? "card_inner_dark" : "card_inner_light"}>

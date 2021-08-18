@@ -3,7 +3,9 @@ import Cards from "./Cards";
 import Paragraph from "./Paragraph";
 import Title from "./Title";
 
+
 function Main({ isDarkMode }) {
+  
   return (
     <>
       <Title text="Text Component" isDarkMode={isDarkMode} />
